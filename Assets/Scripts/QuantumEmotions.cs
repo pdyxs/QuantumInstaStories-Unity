@@ -38,7 +38,7 @@ public class QuantumEmotions : MonoBehaviour
         }
     }
 
-    public Emotion[] emotions;
+    public List<Emotion> emotions = new List<Emotion>();
 
-    public EmotionState[] states;
+    public List<EmotionState> states = new List<EmotionState>();
 }

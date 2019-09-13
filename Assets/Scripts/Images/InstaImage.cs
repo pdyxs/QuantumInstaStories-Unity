@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(QuantumEmotions))]
 public class InstaImage : MonoBehaviour {
@@ -33,6 +34,25 @@ public class InstaImage : MonoBehaviour {
 		}
 	}
 	private QuantumEffect[] _effects;
+
+	public Image actualImage;
+
+	public void Setup(Sprite sprite, InstaImageState state)
+	{
+		actualImage.sprite = sprite;
+		foreach (var request in state.requests)
+		{
+			if (request.hamiltonian.Length == 0)
+			{
+				emotions.emotions.AddRange(request.emotions);
+				var estate = new QuantumEmotions.EmotionState
+				{
+					emotions = Enumerable.Repeat(true, request.emotions.Length).ToArray()
+				};
+				emotions.states.Add(estate);
+			}
+		}
+	}
 
 	public void Initialise(float time)
 	{

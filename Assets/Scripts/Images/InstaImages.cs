@@ -11,13 +11,25 @@ public class InstaImages : MonoBehaviour
 
 	public InstaTimer timerPrefab;
 
+	public InstaImageSet set;
+
+	public InstaImage imagePrefab;
+	
 	public InstaImage[] images;
 
 	private int currentSelected = 0;
 
 	private void Start()
 	{
-		images = GetComponentsInChildren<InstaImage>(true);
+		var imageList = new List<InstaImage>();
+		foreach (var setState in set.states)
+		{
+			var image = Instantiate(imagePrefab, transform);
+			image.Setup(set.baseImage, setState);
+			imageList.Add(image);
+		}
+
+		images = imageList.ToArray();
 
 		var timerList = new List<InstaTimer>();
 		for (var i = 0; i != images.Length; ++i)

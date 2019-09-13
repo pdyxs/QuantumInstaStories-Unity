@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 34e7cb623c9844ee1bc80f5b20d2c706, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 4416878668795900435}
   - component: {fileID: 4416878668795900432}
   - component: {fileID: 4746710641432734502}
+  - component: {fileID: 1358407609978153623}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -356,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6037736, g: 0.39587042, b: 0.39587042, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -385,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
+  m_ShowMaskGraphic: 0
 --- !u!114 &4416878668795900435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce60ca6246e3f4c78a099fae45e88ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actualImage: {fileID: 4822822701766446759}
 --- !u!114 &4416878668795900432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,14 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8b037bdabf5470287e1ef6e975692d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emotions: 0000000006000000
-  states:
-  - emotions: 0100
-    probability: 0.5
-  - emotions: 0001
-    probability: 0.25
-  - emotions: 0101
-    probability: 0.25
+  emotions: 
+  states: []
 --- !u!114 &4746710641432734502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +424,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d05938959cb94487a709d37b6a095ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1358407609978153623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416878668795900446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19b3ddb1a71b4d3f8c279b04ebcd485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2597455467199280188

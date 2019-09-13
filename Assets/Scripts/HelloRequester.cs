@@ -21,10 +21,10 @@ public class HelloRequester : RunAbleThread
         {
             client.Connect("tcp://localhost:5555");
 
-            for (int i = 0; i < 10 && Running; i++)
+            for (int i = 0; i < 1 && Running; i++)
             {
                 Debug.Log("Sending Hello");
-                client.SendFrame("Hello");
+                client.SendFrame("[[0.2,0.4],[0.4,0.8]]");
                 // ReceiveFrameString() blocks the thread until you receive the string, but TryReceiveFrameString()
                 // do not block the thread, you can try commenting one and see what the other does, try to reason why
                 // unity freezes when you use ReceiveFrameString() and play and stop the scene without running the server
@@ -38,7 +38,7 @@ public class HelloRequester : RunAbleThread
                     if (gotMessage) break;
                 }
 
-                if (gotMessage) Debug.Log("Received " + message);
+                if (gotMessage) Debug.LogWarning("Received " + message);
             }
         }
 
