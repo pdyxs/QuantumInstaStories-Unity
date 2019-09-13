@@ -29,18 +29,21 @@ public class InstaImages : MonoBehaviour
 
 		timers.timers = timerList.ToArray();
 		timers.onChangeImage.AddListener(ChangeToImage);
+		images[0].Initialise(timers.totalTime);
 	}
 
 	private void ChangeToImage(int image)
 	{
+		if (image == currentSelected) return;
 		images[currentSelected].gameObject.SetActive(false);
+		images[currentSelected].TearDown();
 		currentSelected = image;
 		images[currentSelected].gameObject.SetActive(true);
+		images[currentSelected].Initialise(timers.totalTime);
 	}
 
 	public void Next()
 	{
-		Debug.Log("hello");
 		var next = Mathf.Min(currentSelected + 1, images.Length - 1);
 		ChangeToImage(next);
 		timers.SetTo(next);
