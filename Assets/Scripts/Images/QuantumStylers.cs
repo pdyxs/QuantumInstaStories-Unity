@@ -18,15 +18,25 @@ public class QuantumStylers : MonoSingleton<QuantumStylers>
         {
             if (!styler.SupportsEffect(effectType)) 
                 continue;
+
+            if (styler.emotions.Length > emotions.Length)
+                continue;
             
             var match = 0;
-            foreach (var emotion in emotions)
+            bool end = false;
+            foreach (var emotion in styler.emotions)
             {
-                if (styler.emotions.Contains(emotion))
+                if (emotions.Contains(emotion))
                 {
                     match++;
                 }
+                else
+                {
+                    end = true;
+                    break;
+                }
             }
+            if (end) continue;
 
             if (match > numberOfMatches)
             {
