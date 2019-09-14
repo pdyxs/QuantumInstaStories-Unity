@@ -419,7 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stylers:
   - {fileID: 11400000, guid: 7d6a39807e67a41439363b481991af67, type: 2}
-  - {fileID: 11400000, guid: 6ced5c89b0cf2449fa9d38b4ecddb773, type: 2}
+  - {fileID: 11400000, guid: 59f24306435e942778679ad4a270b65a, type: 2}
   - {fileID: 11400000, guid: 73be33e2c48314206a5090b59ac7080d, type: 2}
   - {fileID: 11400000, guid: 6eb40abd11c924b1c811da67d26c9769, type: 2}
   - {fileID: 11400000, guid: 05cf9534d86ab47e1a8868c884b060b6, type: 2}
@@ -470,7 +470,7 @@ MonoBehaviour:
   isGlobal: 1
   blendDistance: 0
   weight: 1
-  priority: 0
+  priority: 2
 --- !u!1 &940214044
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
   isGlobal: 1
   blendDistance: 0
   weight: 1
-  priority: 0
+  priority: 1
 --- !u!1 &1435719383
 GameObject:
   m_ObjectHideFlags: 0

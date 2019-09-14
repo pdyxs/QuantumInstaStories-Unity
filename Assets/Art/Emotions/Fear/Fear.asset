@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28fd01a1ae0b84ce68cdc10ed1bac303, type: 3}
-  m_Name: Contempt
+  m_Name: Fear
   m_EditorClassIdentifier: 
-  emotions: 01000000
-  emoticon: {fileID: 3286163911610860551, guid: ce5618b3b067a44fc95f927a7a8b6b93,
-    type: 3}
+  emotions: 03000000
+  emoticon: {fileID: 0}
+  quemoticon: {fileID: 0}
+  postProcessingProfile: {fileID: 0}
