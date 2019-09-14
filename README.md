@@ -1,8 +1,7 @@
-![Qiskagram logo](https://github.com/pdyxs/QuantumInstaStories-Unity/blob/master/img/qiskigram_header_full.jpg?raw=true)
+![Qistigram logo](https://github.com/pdyxs/QuantumInstaStories-Unity/blob/master/img/qiskigram_header_full.jpg?raw=true)
 
-# Qiskagram (v0.1.0)
-*Quantum Instagram Stories*
-Quantum Instagram Stories is a speculative project that uses qiskit to explore future quantum social platforms. Art and design can often ask wider questions about emerging technologies that their original inventors and developers often overlook. Current social networks have changed how we live, behave and view the world - from people’s body image, to fake news & trending hashtags. 
+# Qistigram (v0.1.0)
+*Quantum Instagram Stories* is a speculative project that uses qiskit to explore future quantum social platforms. Art and design can often ask wider questions about emerging technologies that their original inventors and developers often overlook. Current social networks have changed how we live, behave and view the world - from people’s body image, to fake news & trending hashtags. 
 
 Our project explores how a future quantum instagram may interact with its users. While this project may be developed in many directions, for the Qiskit Hackathon we decided to focus on images and privacy. Currently tech companies such as Facebook and Microsoft use artificial intelligence to attempt to predict our emotions in order to sell us things. We believe that in the future, emotions will be better represented and accessed through quantum techniques rather than classical physics. After all, humans are often in complex emotional states rather than in just one emotion or another. 
 
@@ -11,7 +10,7 @@ Here we create a quantum state vector of emotions from an image of a face. Curre
 We hope that other artists, game developers, physicists and technologies continue developing aspects of this platform in the spirit of speculative design to pose further ethical questions around the future impacts of quantum social networks.
 
 
-## How to run Qiskagram
+## How to run Qistigram
 To run this demo, you need to have the [Unity Editor](https://unity3d.com/get-unity/) and python 3.7 with [qiskit](https://qiskit.org) installed.
 
 ### Running the qiskit server
