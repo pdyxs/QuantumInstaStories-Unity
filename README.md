@@ -1,3 +1,5 @@
+![Qiskagram logo](https://github.com/pdyxs/QuantumInstaStories-Unity/blob/master/img/qiskigram_header_full.jpg?raw=true)
+
 # Qiskagram (v0.1.0)
 *Quantum Instagram Stories*
 Quantum Instagram Stories is a speculative project that uses qiskit to explore future quantum social platforms. Art and design can often ask wider questions about emerging technologies that their original inventors and developers often overlook. Current social networks have changed how we live, behave and view the world - from people’s body image, to fake news & trending hashtags. 
