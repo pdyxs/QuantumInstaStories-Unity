@@ -15,5 +15,10 @@ MonoBehaviour:
   emotions: 00000000
   emoticon: {fileID: 3286163911610860551, guid: f90816d581f98479aa849b322bdaefce,
     type: 3}
+  quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 11400000, guid: f3418e3d83349458aa080d76c49caa17,
     type: 2}
+  hashtags:
+  - DONT@ME
+  - HANGRY
+  hashtagColour: {r: 0.7830189, g: 0, b: 0, a: 1}

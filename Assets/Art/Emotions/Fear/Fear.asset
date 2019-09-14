@@ -17,3 +17,7 @@ MonoBehaviour:
     type: 3}
   quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 0}
+  hashtags:
+  - OhHellNo
+  - PlzSendHelp
+  hashtagColour: {r: 0.52156866, g: 0.21568628, b: 0.59607846, a: 1}

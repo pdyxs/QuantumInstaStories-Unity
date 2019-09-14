@@ -18,6 +18,10 @@ public class EmotionStyler : ScriptableObject
     [FormerlySerializedAs("postProcessingVolume")] 
     public PostProcessProfile postProcessingProfile;
 
+    public string[] hashtags;
+
+    public Color hashtagColour;
+
     public bool SupportsEffect(Type effectType)
     {
         if (effectType == typeof(EmojiEffect))
@@ -32,6 +36,11 @@ public class EmotionStyler : ScriptableObject
         if (effectType == typeof(QuemojiEffect))
         {
             return quemoticon != null;
+        }
+
+        if (effectType == typeof(HashtagEffect))
+        {
+            return hashtags != null && hashtags.Length > 0;
         }
 
         return false;

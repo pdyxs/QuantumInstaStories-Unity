@@ -10,7 +10,7 @@ public class EmojiEffect : QuantumEffect
         {
             if (_emojiPositions == null)
             {
-                _emojiPositions = GetComponentsInChildren<Emoji>(true);
+                _emojiPositions = Emojis.instance.emojis;
             }
 
             return _emojiPositions;

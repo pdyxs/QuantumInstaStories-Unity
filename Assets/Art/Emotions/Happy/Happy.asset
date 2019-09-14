@@ -18,3 +18,7 @@ MonoBehaviour:
   quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 11400000, guid: 3088c24e27f1d4361a68aa6503a7100e,
     type: 2}
+  hashtags:
+  - Blessed
+  - LitAF
+  hashtagColour: {r: 1, g: 0.77433145, b: 0.10849059, a: 1}

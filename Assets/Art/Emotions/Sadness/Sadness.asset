@@ -15,5 +15,10 @@ MonoBehaviour:
   emotions: 06000000
   emoticon: {fileID: 3286163911610860551, guid: eceaea30bd69c47e2888fd3521807f87,
     type: 3}
+  quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 11400000, guid: 7bfb04a272e664eb8b74c2911d44ab53,
     type: 2}
+  hashtags:
+  - WorstDayEver
+  - SadTimes
+  hashtagColour: {r: 0.1724813, g: 0.2914033, b: 0.6415094, a: 1}
