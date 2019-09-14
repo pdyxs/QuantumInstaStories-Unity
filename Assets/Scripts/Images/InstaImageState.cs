@@ -8,6 +8,21 @@ using UnityEngine;
 public class InstaImageState : ScriptableObject
 {
     public QiskitRequest[] requests;
+
+    public enum RequestCombiner
+    {
+        AddWithoutBlank,
+        Add,
+        MultiplyWithoutBlank,
+        Multiply
+    }
+
+    public RequestCombiner combiner;
+
+    public bool IsAdding => combiner == RequestCombiner.Add || combiner == RequestCombiner.AddWithoutBlank;
+    public bool IsMultiplying => !IsAdding;
+
+    public bool AllowBlanks => combiner == RequestCombiner.Add || combiner == RequestCombiner.Multiply;
 }
 
 [Serializable]

@@ -39,11 +39,14 @@ public class InstaImage : MonoBehaviour {
 
 	public Image actualImage;
 
+	private InstaImageState state;
+
 	public void Setup(Sprite sprite, InstaImageState state)
 	{
 		actualImage.sprite = sprite;
 		emotions.emotions.Clear();
 		emotions.states.Clear();
+		this.state = state;
 		foreach (var request in state.requests)
 		{
 			if (request.hamiltonian.Length == 0)
@@ -84,24 +87,64 @@ public class InstaImage : MonoBehaviour {
 			emotionBits.Add(bit);
 		}
 
-		foreach (var entry in stringDict)
+		if (emotions.states.Count == 0 || state.IsAdding)
+		{
+			AddResults(stringDict, emotionBits);
+		}
+		else
+		{
+			MultiplyResults(stringDict, emotionBits);
+		}
+	}
+
+	private void AddResults(Dictionary<string, float> results, List<int> emotionBits)
+	{
+		foreach (var entry in results)
 		{
 			if (entry.Value == 0) continue;
-			if (!entry.Key.Contains('1')) continue;
+			if (!entry.Key.Contains('1') && !state.AllowBlanks) continue;
 			
-			var state = new QuantumEmotions.EmotionState();
-			state.emotions = new List<bool>(new bool[emotions.emotions.Count]);
+			var newState = new QuantumEmotions.EmotionState();
+			newState.emotions = new List<bool>(new bool[emotions.emotions.Count]);
 			
 			for (var i = 0; i != entry.Key.Length; ++i)
 			{
 				var index = emotionBits[i];
-				state.emotions[index] = (entry.Key[i] == '1');
+				newState.emotions[index] = (entry.Key[i] == '1');
 			}
 
-			state.probability = entry.Value;
+			newState.probability = entry.Value;
 			
-			emotions.states.Add(state);
+			emotions.states.Add(newState);
 		}
+	}
+
+	private void MultiplyResults(Dictionary<string, float> results, List<int> emotionBits)
+	{
+		var newStates = new List<QuantumEmotions.EmotionState>();
+		foreach (var entry in results)
+		{
+			if (entry.Value == 0) continue;
+			if (!entry.Key.Contains('1') && !state.AllowBlanks) continue;
+
+			foreach (var existingState in emotions.states)
+			{
+				var newState = new QuantumEmotions.EmotionState();
+				newState.emotions = new List<bool>(existingState.emotions);
+			
+				for (var i = 0; i != entry.Key.Length; ++i)
+				{
+					var index = emotionBits[i];
+					newState.emotions[index] = (entry.Key[i] == '1');
+				}
+
+				newState.probability = entry.Value * existingState.probability;
+			
+				newStates.Add(newState);
+			}
+		}
+
+		emotions.states = newStates;
 	}
 
 	public void Initialise(float time)
