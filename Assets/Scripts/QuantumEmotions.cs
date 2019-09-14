@@ -20,13 +20,13 @@ public class QuantumEmotions : MonoBehaviour
     [Serializable]
     public class EmotionState
     {
-        public bool[] emotions;
+        public List<bool> emotions = new List<bool>();
         public float probability;
 
         public Emotion[] Emotions(QuantumEmotions parent)
         {
             var ret = new List<Emotion>();
-            for (var i = 0; i != emotions.Length; ++i)
+            for (var i = 0; i != emotions.Count; ++i)
             {
                 if (emotions[i])
                 {

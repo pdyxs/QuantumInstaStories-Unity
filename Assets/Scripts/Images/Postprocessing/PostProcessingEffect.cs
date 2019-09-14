@@ -20,8 +20,6 @@ public class PostProcessingEffect : QuantumEffect
         foreach (var style in currentStyles)
         {
             var volume = PostProcessingManager.instance.GetVolume(style.postProcessingProfile);
-            Debug.Log(style.postProcessingProfile);
-            Debug.Log(volume);
             if (volume != null)
             {
                 volume.gameObject.SetActive(true);

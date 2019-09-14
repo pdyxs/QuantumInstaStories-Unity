@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Queen 01 - happy
   m_EditorClassIdentifier: 
   requests:
-  - emotions: 05000000
+  - emotions: 04000000
     hamiltonian: []

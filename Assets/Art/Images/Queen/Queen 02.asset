@@ -16,16 +16,16 @@ MonoBehaviour:
   - emotions: 0000000003000000
     hamiltonian:
     - values:
-      - 0.2
-      - 0.4
+      - 1
+      - 0
     - values:
-      - 0.4
-      - 0.8
+      - 0
+      - 0
   - emotions: 0400000006000000
     hamiltonian:
     - values:
-      - 0.2
-      - 0.4
+      - 0
+      - 0.44444445
     - values:
-      - 0.4
-      - 0.8
+      - 0.44444445
+      - 0.22222222

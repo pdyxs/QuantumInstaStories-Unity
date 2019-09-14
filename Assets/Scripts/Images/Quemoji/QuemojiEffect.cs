@@ -6,10 +6,8 @@ public class QuemojiEffect : QuantumEffect
 {
     protected override void UpdateStyle(EmotionStyler[] oldStyles)
     {
-        Debug.LogError(currentStyles.Length);
         if (currentStyles.Length == 0)
         {
-            Debug.LogError("no styles!");
             Quemoji.instance.Image.enabled = false;
         }
         else

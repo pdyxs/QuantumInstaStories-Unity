@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EmojiEffect : QuantumEffect
 {
-
-
     public Emoji[] emojiPositions
     {
         get
@@ -24,8 +22,6 @@ public class EmojiEffect : QuantumEffect
     {
         var positions = new List<Emoji>(emojiPositions);
         positions.Shuffle();
-        
-        Debug.Log($"Emoji! {positions.Count} {currentStyles.Length}");
 
         for (var i = 0; i != positions.Count; ++i)
         {
