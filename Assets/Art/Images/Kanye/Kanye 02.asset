@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50008a6c8a3a04c42aeca614200f3fb3, type: 3}
-  m_Name: Queen 02
+  m_Name: Kanye 02
   m_EditorClassIdentifier: 
   requests:
   - emotions: 0000000003000000
     hamiltonian:
     - values:
-      - 0.7849
-      - 0.1935
+      - 0.01
+      - 0.50000006
     - values:
-      - 0.1935
-      - 0.0215
+      - 0.50000006
+      - 0.40000004
   combiner: 0

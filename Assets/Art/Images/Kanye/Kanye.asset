@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 518aa03297fe24df9b9e3f802657e7ff, type: 3}
-  m_Name: Queen
+  m_Name: Kanye
   m_EditorClassIdentifier: 
-  baseImage: {fileID: 21300000, guid: 34e7cb623c9844ee1bc80f5b20d2c706, type: 3}
+  baseImage: {fileID: 21300000, guid: f35735824dd524b9c9afdc5fd8480ca0, type: 3}
   states:
   - {fileID: 11400000, guid: 25c0748d619744bb882f753b7c9fd67c, type: 2}
-  - {fileID: 11400000, guid: 3137d23fa6f9b4de8bea9b2821376755, type: 2}
-  - {fileID: 11400000, guid: a6e31c103f65d49a1b6d722dd1470415, type: 2}
+  - {fileID: 11400000, guid: ced47d0d32efa40b5a6303f8824a6357, type: 2}
+  - {fileID: 11400000, guid: 4d0d013b221b840b4b86d15325264802, type: 2}
+  - {fileID: 11400000, guid: b9c75863d0819494a8d9c0699766bd97, type: 2}
