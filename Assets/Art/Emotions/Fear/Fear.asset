@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Fear
   m_EditorClassIdentifier: 
   emotions: 03000000
-  emoticon: {fileID: 0}
+  emoticon: {fileID: 3286163911610860551, guid: 37e3dc2d21097479b8fb86ba9aa39649,
+    type: 3}
   quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 0}

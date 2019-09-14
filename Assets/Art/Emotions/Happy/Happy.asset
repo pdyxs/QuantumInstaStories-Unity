@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Happy
   m_EditorClassIdentifier: 
   emotions: 04000000
-  emoticon: {fileID: 0}
+  emoticon: {fileID: 3286163911610860551, guid: 369512af215ba4e3abdc8f3a03926d40,
+    type: 3}
   quemoticon: {fileID: 0}
   postProcessingProfile: {fileID: 11400000, guid: 3088c24e27f1d4361a68aa6503a7100e,
     type: 2}

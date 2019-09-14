@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fd01a1ae0b84ce68cdc10ed1bac303, type: 3}
+  m_Name: Fear-Angry
+  m_EditorClassIdentifier: 
+  emotions: 0000000003000000
+  emoticon: {fileID: 0}
+  quemoticon: {fileID: 9100000, guid: 8e1a0ac473bc7406ca3f3cb22e9f24e1, type: 2}
+  postProcessingProfile: {fileID: 0}
