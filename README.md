@@ -11,7 +11,7 @@ We hope that other artists, game developers, physicists and technologies continu
 
 
 ## How to run Qistigram
-To run this demo, you need to have the [Unity Editor](https://unity3d.com/get-unity/) and python 3.7 with [qiskit](https://qiskit.org) installed.
+To run this demo, you need to have the [Unity Editor](https://unity3d.com/get-unity/) (v2019.2) and python (v3.7) with [qiskit](https://qiskit.org) installed.
 
 ### Running the qiskit server
 The front-end app communicates with a local qiskit server to run the quantum circuits in real-time. Open a terminal and:
